@@ -26,8 +26,3 @@ print("\n Eligible Students (>=70%):")
 eligible_studnets = select_eligible()
 for s in eligible_students:
   print(f"{s['name']} - s {s['percentage']:.2f}%")
-
-
-
-
-
