@@ -21,6 +21,7 @@ if runs_col not in df.columns:
 team_runs = df.groupby(team_col)[runs_col].sum().reset_index()
 team_runs = team_runs.sort_values(by=runs_col, ascending=False)
 
+
 print("\nSorted Teams by Runs:")
 print(team_runs.head(10))
 
@@ -39,3 +40,4 @@ plt.title("Top 10 Teams by Runs - IPL 2025", fontsize=16)
 plt.xlabel("Total Runs")
 plt.ylabel("Team")
 plt.show()
+
